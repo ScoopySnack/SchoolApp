@@ -189,8 +189,9 @@ public class TeacherView extends JFrame {
 		JButton btnClose = new JButton("Κλείσιμο");
 		btnClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Main.getViewTeachersPage().setEnabled(true);
 				Main.getTeacherView().setVisible(false);
+				Main.getViewTeachersPage().setEnabled(true);
+				
 			}
 		});
 		
