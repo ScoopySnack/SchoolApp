@@ -1,6 +1,6 @@
 package gr.aueb.cf.schoolapp;
 
-import java.awt.EventQueue;
+//import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -49,12 +49,12 @@ public class LandingPage extends JFrame {
 		
 		JLabel lblAuthRequired = new JLabel("Απαιτείται ταυτοποίηση");
 		lblAuthRequired.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblAuthRequired.setBounds(61, 71, 710, 76);
+		lblAuthRequired.setBounds(46, 80, 288, 76);
 		contentPane.add(lblAuthRequired);
 		
 		JLabel lblMustConnect = new JLabel("Για να προχωρήσετε πρέπει να συνδεθείτε");
 		lblMustConnect.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblMustConnect.setBounds(122, 136, 296, 42);
+		lblMustConnect.setBounds(46, 142, 296, 42);
 		contentPane.add(lblMustConnect);
 		
 		JButton btnConnect = new JButton("Σύνδεση");
@@ -68,7 +68,7 @@ public class LandingPage extends JFrame {
 		btnConnect.setEnabled(false);
 		btnConnect.setForeground(new Color(255, 255, 255));
 		btnConnect.setBackground(new Color(0, 128, 0));
-		btnConnect.setBounds(61, 253, 132, 42);
+		btnConnect.setBounds(46, 251, 132, 42);
 		contentPane.add(btnConnect);
 		
 		JCheckBox PrivacyCheckBox = new JCheckBox("Δηλώνω ότι αποδέχομαι την");
@@ -82,7 +82,7 @@ public class LandingPage extends JFrame {
 			}
 		});
 		PrivacyCheckBox.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		PrivacyCheckBox.setBounds(122, 190, 182, 21);
+		PrivacyCheckBox.setBounds(46, 192, 182, 21);
 		contentPane.add(PrivacyCheckBox);
 		
 		
@@ -90,7 +90,7 @@ public class LandingPage extends JFrame {
 		JLabel lblPrivacy = new JLabel("Δήλωση Ιδιοτηκότητας");
 		lblPrivacy.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblPrivacy.setForeground(new Color(0, 0, 255));
-		lblPrivacy.setBounds(310, 179, 207, 42);
+		lblPrivacy.setBounds(234, 181, 207, 42);
 		contentPane.add(lblPrivacy);
 		
 	
@@ -104,21 +104,21 @@ public class LandingPage extends JFrame {
 		lblManual.setForeground(new Color(0, 52, 117));
 		lblManual.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblManual.setBackground(new Color(0, 52, 117));
-		lblManual.setBounds(34, 43, 115, 37);
+		lblManual.setBounds(33, 23, 115, 37);
 		footer.add(lblManual);
 		
 		JLabel lblQuestions = new JLabel("Συχνές Ερωτήσεις");
 		lblQuestions.setForeground(new Color(0, 52, 117));
 		lblQuestions.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblQuestions.setBackground(new Color(0, 52, 117));
-		lblQuestions.setBounds(271, 43, 115, 37);
+		lblQuestions.setBounds(271, 23, 115, 37);
 		footer.add(lblQuestions);
 		
 		JLabel lblSupport = new JLabel("Υποστήριξη πολιτών");
 		lblSupport.setForeground(new Color(0, 52, 117));
 		lblSupport.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblSupport.setBackground(new Color(0, 52, 117));
-		lblSupport.setBounds(490, 43, 115, 37);
+		lblSupport.setBounds(493, 23, 115, 37);
 		footer.add(lblSupport);
 		
 		JSeparator separator = new JSeparator();
