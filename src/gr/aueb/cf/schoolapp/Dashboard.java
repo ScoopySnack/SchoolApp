@@ -30,14 +30,14 @@ public class Dashboard extends JFrame {
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowOpened(WindowEvent e) {
-				String sql = "jdbc:mysql://localhost:3306/school7dbpro?serverTimezone=UTC";
-				String username = "user7pro";
+				String sql = "jdbc:mysql://localhost:3306/shcool7dbpro?serverTimezone=UTC";
+				String username = "adm";
 				String password = "12345";
 				
 				try {
-					//Class.forName("com.mysql.cj.jdbc.Driver");
+					//Class.forName("com.mysql.cj.jdbc.Driver"); // Deprecated, in case driver is not set in the classpath
 					connection = DriverManager.getConnection(sql, username, password);
-					System.out.println("Connected to the database");
+					System.out.println("Connection successful");
 				} catch (SQLException e1) {
 					e1.printStackTrace();
 				}
